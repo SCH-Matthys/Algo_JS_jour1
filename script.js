@@ -36,14 +36,14 @@
 // console.log("Le plus grand est " + Math.max(a,b,c));
 
 // Exercice 6 :
-const x = 29;
-if(x >= 1){
-    if( let i = 2; i/Math.sqrt(i); i++){
+// const x = 29;
+// if(x >= 1){
+//     if( let i = 2; i/Math.sqrt(i); i++){
         
-    }
-} else{
-    console.log( x + " doit être un nombre superieur à 1 pour être un nombre premier.")
-}
+//     }
+// } else{
+//     console.log( x + " doit être un nombre superieur à 1 pour être un nombre premier.")
+// }
 
 // Exercice 7 :
 // let x = 1;
@@ -123,3 +123,130 @@ if(x >= 1){
 // } else{
 //     console.log("la couleur n'est pas reconnue")
 // }
+
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////
+
+// ARRAYS
+
+
+
+// Exercice 1 : 
+// let numbers = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(numbers.map( x => x * 2));
+
+// Exercice 2 :
+// let fruits = ["apple", "banana", "cherry"];
+// console.log(fruits[2]);
+
+// Exercice 3 :
+// let fruits = ["apple", "banana", "cherry"];
+// for( let fruit of fruits ){
+//     console.log(fruit);
+// }
+
+// Exercice 4 :
+// let fruits = ["apple", "banana", "cherry"];
+// function reverseArray(arr){
+//     return arr.reverse()
+// }
+// console.log(reverseArray(fruits));
+
+// Exercice 5 :
+// let fruits = ["apple", "banana", "cherry", "cherry", "cherry", "cherry"];
+function countOccurrences(arr, value) {
+    let i = 0;
+    for(let occ of arr){
+        if(occ === value){ 
+            i++;
+        }
+    }
+    return i;
+}
+// console.log(countOccurrences(fruits, "cherry"));
+
+// Exercice 6 : PAS FINI
+// let fruits = ["apple", "banana", "cherry", "cherry", "cherry", "cherry", "banana", "banana", "apple"];
+// function countOccurrences(arr, value) {
+//     let i = 0;
+//     for(let occ of arr){
+//         if(occ === value){ 
+//             i++;
+//         }
+//     }
+//     return i;
+// }
+
+// function mostFrequent(arr){
+//     const occMax = 0;
+//     for(let occ of arr){
+//         return "AHAHAHAH";
+//     }
+// }
+// console.log(mostFrequent(fruits));
+
+
+// Exercice 7 :
+// let sentence = "Je suis nul !";
+// function reverseWords(arr){
+//     const reverseArr = arr.split(" ").reverse().join(" ")
+//     return reverseArr;
+// }
+// console.log(reverseWords(sentence));
+
+// Exercice 8 
+// let numbers = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function filterEven(arr){
+//     let numbersEven = [];
+//     for (let number of arr){
+//         if ( number % 2 === 0 ){
+//             numbersEven.push(number);
+//         }
+//     }
+//     return numbersEven;
+// }
+
+// function filterEven(arr){
+//     return arr.filter(number => number % 2 === 0);
+// }
+// console.log(filterEven(numbers));
+
+// Exercice 9 : 
+// let numbers = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let fruits = ["apple", "banana", "cherry", "cherry", "cherry", "cherry", "banana", "banana", "apple"];
+// function mergeArrays(arr1, arr2){
+//     let mergedArray = arr1.concat(arr2);
+//     return mergedArray;
+// }
+// console.log(mergeArrays(fruits, numbers));
+
+// Exercice 10 :
+// let fruits = ["apple", "banana", "cherry", "cherry", "cherry", "cherry", "banana", "banana", "apple"];
+// function removeDuplicates(arr){
+//     let items = [];
+//     for(let item of arr){
+//         if(!items.includes(item)){
+//             items.push(item);
+//         }    
+//     }
+//     return items;
+// }
+// console.log(removeDuplicates(fruits));
+
+// Exercice 11 :
+// let numbers1 = [1,2,3,4,5,6,7,8,9];
+// let numbers2 = [1,2,3,4,5,6,2,8];
+// function isSorted(arr){
+//     let sorted = [...arr].sort();
+//     return arr.join("") === sorted.join("");
+// }
+// console.log(isSorted(numbers2));
+
+// Exercice 12 :
+let test = "je ne suis pas un hero !"
+function textUpper(txt){
+    return txt.split(" ").toUpperCase().join(" ");
+}
+console.log(textUpper(test));
