@@ -156,15 +156,15 @@
 
 // Exercice 5 :
 // let fruits = ["apple", "banana", "cherry", "cherry", "cherry", "cherry"];
-function countOccurrences(arr, value) {
-    let i = 0;
-    for(let occ of arr){
-        if(occ === value){ 
-            i++;
-        }
-    }
-    return i;
-}
+// function countOccurrences(arr, value) {
+//     let i = 0;
+//     for(let occ of arr){
+//         if(occ === value){ 
+//             i++;
+//         }
+//     }
+//     return i;
+// }
 // console.log(countOccurrences(fruits, "cherry"));
 
 // Exercice 6 : PAS FINI
@@ -245,8 +245,84 @@ function countOccurrences(arr, value) {
 // console.log(isSorted(numbers2));
 
 // Exercice 12 :
-let test = "je ne suis pas un hero !"
-function textUpper(txt){
-    return txt.split(" ").toUpperCase().join(" ");
-}
-console.log(textUpper(test));
+// let test = "je ne suis pas un hero !"
+// function textUpper(txt){
+//     return txt.split(" ").toUpperCase().join(" ");
+// }
+// console.log(textUpper(test));
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////
+
+// OBJECTS
+
+
+// Exercice 1 : 
+// let person = {
+//     firstNmae: "Hella",
+//     lastName: "Jonson"
+// };
+// console.log(person);
+
+
+// Exercice 2 :
+// let person = {
+//     firstName: "Hella",
+//     lastName: "Jonson",
+//     greet: function(){
+//         return console.log("Hello, my name is " + this.firstName + " " + this.lastName);
+//     }
+// };
+// console.log(person.greet());
+
+
+// Exercice 3 :
+// let person = {
+//     firstNmae: "Hella",
+//     lastName: "Jonson"
+// };
+// person.age = 30;
+// delete person.lastName;
+// console.log(person);
+
+
+// Exercice 4 :
+// let car = {
+//     brand: "Tesla",
+//     model: "X",
+//     year: 2020,
+//     start: function(){
+//         return console.log("The car is starting");
+//     },
+//     info: function(){
+//         return console.log(car);
+//     }
+// }
+// car.start();
+// car.info();
+
+
+// Exercice 5 : 
+// const Car = new Object();
+// Car.brand = "carBrandName";
+// Car.model = "carModelName";
+// Car.year = "carYear";
+// Car.start = function(){
+//     return console.log("The car is starting");
+// };
+
+// function Object(brandName, modelName, year){
+//     this.brand = brandName;
+//     this.model = modelName;
+//     this.year = year;
+// };
+
+// const car1 = new Object("Tesla", "X", 2020);
+// const car2 = new Object("Tesla", "S", 2023);
+
+// console.log(car1, car2);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
